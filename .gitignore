@@ -1,0 +1,64 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Terraform sensitive variables
+terraform.tfvars
+*.auto.tfvars
+secrets.tfvars
+
+# Ansible
+*.retry
+ansible/inventory/*/group_vars/vault.yml
+ansible/inventory/*/host_vars/*/vault.yml
+vault-password.txt
+
+# Credentials and keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+.env
+.env.*
+credentials.yml
+secrets.yml
+
+# Configuration backups
+configs/backups/*
+!configs/backups/.gitkeep
+
+# pyATS results
+pyats/results/*
+!pyats/results/.gitkeep
+pyats/archive/
+pyats/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+.venv/

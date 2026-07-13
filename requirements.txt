@@ -1,0 +1,8 @@
+ansible
+pyats
+genie
+netmiko
+napalm
+requests
+jinja2
+pyyaml
